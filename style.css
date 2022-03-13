@@ -417,7 +417,7 @@ section .text p {
     margin-top: -10rem;
 }
 
-.net-link p {
+.net-link .text p {
     text-transform: none;
 }
 
@@ -465,17 +465,13 @@ img.icon-net {
 .icon-mail-envelope-closed,
 .icon-home {
     position: relative;
-    font-size: 3.9rem;
+    font-size: 2.6rem;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
     transition: 0.2s;
     background-color: #000000;
     color: white;
-}
-
-.icon-home {
-    font-size: 2.6rem;
     padding: 0.5rem;
     bottom: 0.5rem;
 }
@@ -680,6 +676,7 @@ img.icon-net {
         margin: 1rem auto;
     }
     h1 {
+        letter-spacing: 1px;
         text-decoration: none;
     }
     p,
@@ -691,15 +688,21 @@ img.icon-net {
         top: -1.89rem;
     }
     h2 {
-        margin-top: 1.5rem;
-        font-size: 0.7rem;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+    section .text p {
+        text-align: justify;
     }
     /* ABOUT */
     .bottom-bar {
-        margin-top: -1rem;
+        margin-top: -0.5rem;
     }
     .bottom-bar .text h2 {
         display: inline-block;
+    }
+    .bar::after {
+        top: -22px;
     }
     .bar::before {
         width: 1rem;
@@ -712,19 +715,42 @@ img.icon-net {
     .net-link img.icon-net {
         width: 1.5rem;
     }
-    /* SHOW CONTACT FORM */
-    #header-form {
-        margin-bottom: 2rem;
-        padding-bottom: 0.4rem;
+    .net-link .text p {
+        text-align: center;
     }
-    #contact-form .icon-mail-envelope-closed {
-        font-size: 4rem;
+    /* SHOW CONTACT FORM */
+    #contact-button {
+        top: 7rem;
+    }
+    #contact-button .text {
+        top: -0.8rem;
+    }
+    #contact-button .text h2 {
+        font-size: 16px;
+        color: white;
+        margin-top: 1.5rem;
+    }
+    #header-form {
+        margin-bottom: 3rem;
+        padding-bottom: 0rem;
+    }
+    #contact-button .icon-mail-envelope-closed,
+    #contact-button .icon-home {
+        background-color: white;
+        width: 4rem;
+        border-radius: 5px;
+        height: 2.9rem;
+        color: #000000;
+        font-size: 2.5rem;
         margin-bottom: 0;
     }
     #contact-form #form-content h3 {
         margin-top: 1rem;
         font-size: 14px;
         margin-bottom: 5px;
+    }
+    #contact-form .icon-mail-envelope-closed {
+        font-size: 4rem;
     }
     #contact-form #form-content input {
         margin-bottom: 1rem;
