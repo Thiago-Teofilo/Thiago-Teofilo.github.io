@@ -586,194 +586,204 @@ img.icon-net {
 /* RESPONSIVE */
 
 @media screen and (max-width: 455px) {
-    body {
-        overflow: auto;
-        height: 100%;
-    }
-    header {
-        margin-bottom: 2.5rem;
-    }
-    #contact-button h2 {
-        font-size: 1.2rem;
-    }
-    /* EFFECT */
-    body::before {
-        background-size: contain;
-        background-repeat: repeat;
-    }
-    /* HEADER  */
     h1 {
+        border-bottom: 1.125px solid white;
+        padding-bottom: 1.875px;
+        letter-spacing: 0.75px;
         font-size: 1.5rem;
-        letter-spacing: 2px;
+    }
+    h2 {
+        font-size: 0.9rem;
+        margin-top: 1.5rem;
     }
     p {
-        margin: 0.5rem 0;
+        margin: 0.75rem 0;
+        font-size: 0.9rem;
     }
+    li {
+        font-size: 16.5px;
+        width: 3.75rem;
+        margin-left: 0.75rem;
+    }
+    a {
+        margin: auto 0.75rem;
+    }
+    /* HEADER  */
     img.icon-logo {
-        margin-top: -0.1rem;
-        width: 5rem;
-        height: 5rem;
+        width: 5.25rem;
+        height: 5.25rem;
+        padding: 0.225rem 0rem;
+        margin: 0.75rem 0;
+        border: rgb(87, 62, 56) 2.25px;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .people-title {
+        margin-bottom: 1.125rem;
     }
     /* CARD */
     div#card,
     #contact-form {
-        width: 18rem;
-        box-shadow: #000000 0rem -3rem 1rem 0.5rem;
+        height: 42rem;
+        top: 3.75rem;
+        width: 19.5rem;
+        border: solid 4.5px rgb(255, 252, 245);
+        border-radius: 0.75rem;
+        border-radius: 1.65rem;
     }
-    #contact-form {
-        left: calc(50% - 9rem);
+    #card-content,
+    #form-content {
+        margin-top: 1.5rem;
     }
     /* CARD HEIGHT CHOICE */
-    #card.about,
-    #card,
-    #contact-form {
-        height: 43rem;
+    #card.about {
+        height: 42rem;
     }
     #card.bio {
-        height: 44rem;
+        height: 41rem;
     }
     #card.net {
-        height: 48rem;
+        height: 49rem;
     }
-    /* BORDER-LINES */
+    /* CARD - BORDERS */
+    .card-border {
+        width: 3rem;
+        height: 3rem;
+    }
+    .card-border::before {
+        width: 3rem;
+        height: 3rem;
+    }
+    /* CARD - BORDERSLINERS */
+    .border-lines {
+        top: 0.65rem;
+    }
+    .border-lines div {
+        border-radius: 0.48rem;
+    }
     .border-lines .y-lines {
-        width: 66%;
-        top: -0.4rem;
-        height: 97.5%;
+        width: 78%;
+        height: 97%;
+        border-left: 1px;
+        border-right: 1px;
+    }
+    #card.net .x-lines {
+        height: 90.5%;
     }
     .border-lines .x-lines {
-        height: 87%;
-    }
-    .bottom-left,
-    .bottom-right {
-        background-color: #464640;
-    }
-    .bottom-right::before {
-        background: radial-gradient(circle at 0% 0%, rgb(255, 252, 245) 50%, #464640 50%);
-    }
-    .bottom-left::before {
-        background: radial-gradient(circle at 100% 0%, rgb(255, 252, 245) 50%, #464640 50%);
-    }
-    #card.bio .border-lines .x-lines {
-        height: 86.5%;
+        width: 94%;
+        top: 1.7rem;
+        height: 89.5%;
+        border-top: 2px;
+        border-bottom: 2px;
     }
     /* NAVIGATION */
     ul {
-        margin-left: -1rem;
-        margin-bottom: 1.6rem;
+        margin-left: -0.75rem;
     }
-    li a {
-        font-size: 0.8rem;
+    li::before {
+        width: 3.75rem;
+        top: -3.75rem;
+        border: rgb(87, 62, 56) 3.75px;
+        left: -0.2625rem;
     }
     li#selected::before {
-        width: 3.5rem;
-        height: 2rem;
-        top: -0.5rem;
+        width: 3.75rem;
+        height: 2.25rem;
     }
     /* SECTION */
-    section {
-        margin: 1rem auto;
-    }
-    h1 {
-        letter-spacing: 1px;
-        text-decoration: none;
-    }
-    p,
-    .bar {
-        font-size: 0.7rem;
-        line-height: 0.5rem;
-    }
-    .bar::after {
-        top: -1.89rem;
-    }
-    h2 {
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
+    section .text {
+        margin: 0.75rem 0;
     }
     section .text p {
-        text-align: justify;
+        margin: 0.225rem 0;
+        line-height: 0.75rem;
     }
-    /* ABOUT */
     .bottom-bar {
-        margin-top: -0.5rem;
-    }
-    .bottom-bar .text h2 {
-        display: inline-block;
-    }
-    .bar::after {
-        top: -22px;
+        margin-top: -0.75rem;
     }
     .bar::before {
-        width: 1rem;
-        height: 1rem;
-        content: '';
-        top: -0.5rem;
-        border-width: 1px;
-    }
-    /* NETWORKS */
-    #net {
-        margin-top: -1rem;
-    }
-    .net-link {
-        margin-top: -5rem;
-    }
-    .net-link img.icon-net {
-        width: 2rem;
-    }
-    .net-link .text p {
-        text-align: center;
-    }
-    /* SHOW CONTACT FORM */
-    #contact-button {
-        top: 7rem;
-    }
-    #contact-button .text {
-        top: -0.8rem;
-    }
-    #contact-button .text h2 {
-        font-size: 16px;
-        color: white;
-        margin-top: 1.5rem;
-    }
-    #header-form {
-        margin-bottom: 3rem;
-        padding-bottom: 0rem;
-    }
-    #contact-button .icon-mail-envelope-closed,
-    #contact-button .icon-home {
-        background-color: white;
-        width: 4rem;
-        border-radius: 5px;
-        height: 2.9rem;
-        color: #000000;
-        font-size: 2.5rem;
-        margin-bottom: 0;
-    }
-    #contact-form #form-content h3 {
-        margin-top: 1rem;
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
-    #contact-form .icon-mail-envelope-closed {
-        font-size: 4rem;
-    }
-    #contact-form #form-content input {
-        margin-bottom: 1rem;
+        width: 1.2rem;
         height: 1.2rem;
     }
+    .bar::after {
+        font-size: 0.75rem;
+        top: -2rem;
+    }
+    /* REDES */
+    .net-link {
+        margin-top: -7.5rem;
+    }
+    .net-link img.icon-net {
+        width: 1.8rem;
+        margin-bottom: 0.15rem;
+        padding: 1.5px;
+    }
+    /* CONTACT BUTTON */
+    #contact-button .text {
+        color: rgb(255, 255, 255);
+    }
+    #contact-button .text h2 {
+        font-size: 1rem;
+    }
+    .icon-mail-envelope-closed,
+    .icon-home {
+        position: relative;
+        font-size: 2.6rem;
+        border-radius: 5px;
+        width: 4rem;
+        height: 2.9rem;
+        background-color: white;
+        color: #000000;
+        padding: 0.5rem;
+        bottom: 0.5rem;
+    }
+    /* SHOW CONTACT FORM */
+    #contact-form {
+        left: calc(50% - 9.8rem);
+        top: 20rem;
+    }
+    #contact-form.form-visible {
+        top: 3.8rem;
+    }
+    #header-form {
+        margin: 0 auto 3rem auto;
+        border-bottom: 1.5px solid white;
+        padding-bottom: 2.25rem;
+    }
+    #contact-form .icon-mail-envelope-closed {
+        font-size: 4.5rem;
+        margin: 0.75rem auto;
+        color: white;
+    }
+    #contact-form #form-content h3 {
+        border-bottom: 1.5px solid white;
+        padding: 0.75px 3.75px;
+        margin: 2.25rem auto 0.75rem auto;
+    }
+    #contact-form #form-content input {
+        height: 1.5rem;
+    }
     #contact-form #form-content textarea {
-        height: 4rem;
-        margin-top: 0px;
+        height: 6rem;
     }
     #contact-form #form-content textarea,
-    #contact-form #form-content input,
-    #contact-form #form-content button {
-        border-radius: 8px;
+    #contact-form #form-content input {
+        border: solid 1.5px white;
+        padding: 6px;
+        border-radius: 11.25px;
     }
     #contact-form #form-content button {
-        font-size: 0.8rem;
-        margin-top: 2rem;
-        width: 70%;
-        height: 2rem;
+        font-size: 0.75rem;
+        margin-top: 2.25rem;
+        height: 2.25rem;
+        border-radius: 11.25px;
+        border: solid white 1.5px;
+        box-shadow: rgb(0, 0, 0) 0 0px 0px 1.5px inset;
+    }
+    #contact-form #form-content button:hover {
+        box-shadow: rgb(0, 0, 0) 0 0px 0px 30px inset;
     }
 }
