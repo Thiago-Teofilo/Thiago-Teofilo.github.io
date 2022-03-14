@@ -325,17 +325,18 @@ li::before {
     height: 0rem;
     border-radius: 85% 85% 85% 85%;
     transition: 0.3s;
-    border: rgb(87, 62, 56) 5px;
-    left: -0.35rem;
+    border: rgb(87, 62, 56) 0px;
+    border-style: double;
     z-index: -1;
+    left: calc(50% - 2.6rem);
 }
 
 li#selected::before {
     position: absolute;
+    left: -0.35rem;
     content: '';
     background-color: white;
     width: 5rem;
-    left: -0.35rem;
     top: -0.5rem;
     height: 3rem;
     border-radius: 15% 15% 85% 85%;
@@ -687,9 +688,10 @@ img.icon-net {
         width: 3.75rem;
         top: -3.75rem;
         border: rgb(87, 62, 56) 3.75px;
-        left: -0.2625rem;
+        left: calc(50% - 1.875rem);
     }
     li#selected::before {
+        top: -0.5rem;
         width: 3.75rem;
         height: 2.25rem;
     }
