@@ -1,171 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Thiago Teofilo | Portifolio</title>
+		<link
+			rel="shortcut icon"
+			type="imagex/png"
+			href="https://assets.bigcartel.com/account_images/3812217/logo+thin+colo.png?auto=format&fit=max&h=1200&w=1200"
+		/>
+		<link rel="stylesheet" href="assets/Fonts/IcoMoon/style.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thiago Teofilo | Portifolio</title>
-    <link rel="shortcut icon" type="imagex/png" href="https://assets.bigcartel.com/account_images/3812217/logo+thin+colo.png?auto=format&fit=max&h=1200&w=1200" />
-    <link rel="stylesheet" href="assets/Fonts/IcoMoon/style.css" />
-    <link rel="stylesheet" href="style.css" />
-</head>
+	<body>
+		<div id="page">
+			<div class="back-effect"></div>
 
-<body>
-    <div id="page">
-        <div class="back-effect"></div>
+			<div id="card">
+				<div class="card-border top-left"></div>
+				<div class="card-border top-right"></div>
+				<div class="card-border bottom-left"></div>
+				<div class="card-border bottom-right"></div>
+				<div class="border-lines">
+					<div class="x-lines"></div>
+					<div class="y-lines"></div>
+				</div>
+				<div id="card-content">
+					<header>
+						<div id="header-content">
+							<div alt="" class="icon-logo"></div>
+							<h1 class="name">Thiago Teofilo</h1>
+							<p class="people-title">WEB Designer</p>
+						</div>
+						<div id="nav-bar">
+							<nav>
+								<ul>
+									<li class="about" id="selected" class="list-item">
+										<a onclick="select_item('about')" href="#">Sobre</a>
+									</li>
+									<li class="bio" class="list-item">
+										<a onclick="select_item('bio')" href="#">Bio</a>
+									</li>
+									<li class="net" class="list-item">
+										<a onclick="select_item('net')" href="#">Redes</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</header>
+					<section id="about" class="visible">
+						<div class="text">
+							<h2>Habilidades</h2>
+							<p>
+								Experiencia em CSS3, HTML5 junto com a linguagem de programação
+								JavaScript (JS). Aprofundando-se nas linguagens Java, Python e
+								PHP.
+							</p>
+						</div>
+						<div class="text">
+							<h2>Formação Acadêmica</h2>
+							<p>
+								Desevolvedor independente em ascensão, graduando Análise e
+								Desenvolvimento de Sistemas na Fatec de Bragança Paulista.
+							</p>
+						</div>
+						<div class="text">
+							<h2>Mais sobre</h2>
+							<p>
+								Trabalho na criação de interface do usuário, criando layouts
+								interativos. Consultar orçamentos nas redes sociais.
+							</p>
+						</div>
+						<div class="bottom-bar">
+							<div class="text">
+								<h2>Front end</h2>
+								<div class="bar"></div>
+							</div>
+						</div>
+					</section>
+					<section id="bio">
+						<div class="text">
+							<p>
+								Nasci no dia 17 de fevereiro de 2003 na cidade de Santo André
+								SP, morei boa parte da minha vida em Mauá SP.
+							</p>
+							<br />
+							<p>
+								Terminei o ensino fundamental na escola de E.E. Sylvio Gueratto
+								no ano de 2017 e me mudei com meus pais para cidade de Socorro.
+								No próximo ano, estudei na escola Maria Odette de Leite
+								Frattini, onde terminei o ensino médio e nesse mesmo periodo
+								estudei e iniciei o estudo em lógica de programação na Consys
+								Tecnologia até 2020.
+							</p>
+							<br />
+							<p>
+								Após terminar o ensino médio em 2021 imigrei para Fatec em
+								Bragança Paulista no curso de Análise e Desenvolvimento de
+								Sistemas onde estudo até o presente momento.
+							</p>
+						</div>
+					</section>
+					<section id="net" class="">
+						<a
+							class="net-link"
+							href="https://www.linkedin.com/in/thiago-teofilo-2aba88206/"
+							target="_blank"
+						>
+							<div class="text">
+								<img
+									class="icon-net"
+									src="https://cdn-icons-png.flaticon.com/512/254/254394.png"
+									alt="Linkedin"
+								/>
+								<p>Linkedin thiago-teofilo</p>
+							</div>
+						</a>
+						<a
+							href="https://www.instagram.com/thiago_teofilo/"
+							target="_blank"
+							class="net-link"
+						>
+							<div class="text">
+								<img
+									src="https://cdn-icons-png.flaticon.com/512/1077/1077093.png"
+									alt="Instagram"
+									class="icon-net"
+								/>
+								<p>Instagram @thiago_teofilo</p>
+							</div>
+						</a>
+						<a
+							class="net-link"
+							href="https://codecanyon.net/user/thiago_teofilo"
+							target="_blank"
+						>
+							<div class="text">
+								<img
+									src="https://cdn-icons-png.flaticon.com/512/254/254389.png"
+									alt="Envato"
+									class="icon-net"
+								/>
+								<p>Envato thiago_teofilo</p>
+							</div>
+						</a>
+						<a
+							href="https://github.com/Thiago-Teofilo"
+							class="net-link"
+							target="_blank"
+						>
+							<div class="text">
+								<img
+									src="https://cdn-icons-png.flaticon.com/512/25/25657.png"
+									alt="GitHub"
+									class="icon-net"
+								/>
+								<p>GitHub Thiago_Teofilo</p>
+							</div>
+						</a>
+					</section>
+				</div>
+			</div>
+			<a href="#" onclick="show_form('form-visible')">
+				<div id="contact-button">
+					<div id="contact_button_icon" class="icon-mail-envelope-closed"></div>
+					<div class="text">
+						<h2>Entrar em Contato</h2>
+					</div>
+				</div>
+			</a>
+			<div id="contact-form">
+				<div class="card-border top-left"></div>
+				<div class="card-border top-right"></div>
+				<div class="card-border bottom-left"></div>
+				<div class="card-border bottom-right"></div>
+				<div class="border-lines">
+					<div class="x-lines"></div>
+					<div class="y-lines"></div>
+				</div>
+				<div id="form-content">
+					<div id="header-form">
+						<h1>Contato</h1>
+						<div class="icon-mail-envelope-closed"></div>
+					</div>
 
-        <div id="card">
-            <div class="card-border top-left"></div>
-            <div class="card-border top-right"></div>
-            <div class="card-border bottom-left"></div>
-            <div class="card-border bottom-right"></div>
-            <div class="border-lines">
-                <div class="x-lines"></div>
-                <div class="y-lines"></div>
-            </div>
-            <div id="card-content">
-                <header>
-                    <div id="header-content">
-                        <img src="https://assets.bigcartel.com/account_images/3812217/logo+thin+colo.png?auto=format&fit=max&h=1200&w=1200" alt="" class="icon-logo" />
-                        <h1 class="name">Thiago Teofilo</h1>
-                        <p class="people-title">WEB Designer</p>
-                    </div>
-                    <div id="nav-bar">
-                        <nav>
-                            <ul>
-                                <li class="about" id="selected" class="list-item">
-                                    <a onclick="select_item('about')" href="#">Sobre</a>
-                                </li>
-                                <li class="bio" class="list-item">
-                                    <a onclick="select_item('bio')" href="#">Bio</a>
-                                </li>
-                                <li class="net" class="list-item">
-                                    <a onclick="select_item('net')" href="#">Redes</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>
-                <section id="about" class="visible">
-                    <div class="text">
-                        <h2>Habilidades</h2>
-                        <p>
-                            Experiencia em CSS3, HTML5 junto com a linguagem de programação JavaScript (JS). Aprofundando-se nas linguagens Java, Python e PHP.
-                        </p>
-                    </div>
-                    <div class="text">
-                        <h2>Formação Acadêmica</h2>
-                        <p>
-                            Desevolvedor independente em ascensão, graduando Análise e Desenvolvimento de Sistemas na Fatec de Bragança Paulista.
-                        </p>
-                    </div>
-                    <div class="text">
-                        <h2>Mais sobre</h2>
-                        <p>
-                            Trabalho na criação de interface do usuário, criando layouts interativos. Consultar orçamentos nas redes sociais.
-                        </p>
-                    </div>
-                    <div class="bottom-bar">
-                        <div class="text">
-                            <h2>Front end</h2>
-                            <div class="bar"></div>
-                        </div>
-                    </div>
-                </section>
-                <section id="bio">
-                    <div class="text">
-                        <p>
-                            Nasci no dia 17 de fevereiro de 2003 na cidade de Santo André SP, morei boa parte da minha vida em Mauá SP.
-                        </p>
-                        <br />
-                        <p>
-                            Terminei o ensino fundamental na escola de E.E. Sylvio Gueratto no ano de 2017 e me mudei com meus pais para cidade de Socorro. No próximo ano, estudei na escola Maria Odette de Leite Frattini, onde terminei o ensino médio e nesse mesmo periodo estudei
-                            e iniciei o estudo em lógica de programação na Consys Tecnologia até 2020.
-                        </p>
-                        <br />
-                        <p>
-                            Após terminar o ensino médio em 2021 imigrei para Fatec em Bragança Paulista no curso de Análise e Desenvolvimento de Sistemas onde estudo até o presente momento.
-                        </p>
-                    </div>
-                </section>
-                <section id="net" class="">
-                    <a class="net-link" href="https://www.linkedin.com/in/thiago-teofilo-2aba88206/" target="_blank">
-                        <div class="text">
-                            <img class="icon-net" src="https://cdn-icons-png.flaticon.com/512/254/254394.png" alt="Linkedin" />
-                            <p>Linkedin thiago-teofilo</p>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/thiago_teofilo/" target="_blank" class="net-link">
-                        <div class="text">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077093.png" alt="Instagram" class="icon-net" />
-                            <p>Instagram @thiago_teofilo</p>
-                        </div>
-                    </a>
-                    <a class="net-link" href="https://codecanyon.net/user/thiago_teofilo" target="_blank">
-                        <div class="text">
-                            <img src="https://cdn-icons-png.flaticon.com/512/254/254389.png" alt="Envato" class="icon-net" />
-                            <p>Envato thiago_teofilo</p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/Thiago-Teofilo" class="net-link" target="_blank">
-                        <div class="text">
-                            <img src="https://cdn-icons-png.flaticon.com/512/25/25657.png" alt="GitHub" class="icon-net" />
-                            <p>GitHub Thiago_Teofilo</p>
-                        </div>
-                    </a>
-                </section>
-            </div>
-        </div>
-        <a href="#" onclick="show_form('form-visible')">
-            <div id="contact-button">
-                <div id="contact_button_icon" class="icon-mail-envelope-closed"></div>
-                <div class="text">
-                    <h2>Entrar em Contato</h2>
-                </div>
-            </div>
-        </a>
-        <div id="contact-form">
-            <div class="card-border top-left"></div>
-            <div class="card-border top-right"></div>
-            <div class="card-border bottom-left"></div>
-            <div class="card-border bottom-right"></div>
-            <div class="border-lines">
-                <div class="x-lines"></div>
-                <div class="y-lines"></div>
-            </div>
-            <div id="form-content">
-                <div id="header-form">
-                    <h1>Contato</h1>
-                    <div class="icon-mail-envelope-closed"></div>
-                </div>
+					<div>
+						<form action="https://formspree.io/f/xpzbrgyj" method="POST">
+							<label>
+								<h3>Seu nome</h3>
+								<input type="text" name="name" />
+							</label>
+							<br />
+							<label>
+								<h3>Seu email</h3>
+								<input type="email" name="email" />
+							</label>
+							<br />
+							<label>
+								<h3>Sua mensagem</h3>
+								<textarea name="message"></textarea>
+							</label>
+							<br />
+							<!-- your other form fields go here -->
+							<button type="submit">Enviar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                <div>
-                    <form action="https://formspree.io/f/xpzbrgyj" method="POST">
-                        <label>
-                <h3>Seu nome</h3>
-                <input type="text" name="name" />
-              </label>
-                        <br />
-                        <label>
-                <h3>Seu email</h3>
-                <input type="email" name="email" />
-              </label>
-                        <br />
-                        <label>
-                <h3>Sua mensagem</h3>
-                <textarea name="message"></textarea>
-              </label>
-                        <br />
-                        <!-- your other form fields go here -->
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="main.js"></script>
-</body>
-
+		<script src="main.js"></script>
+	</body>
 </html>

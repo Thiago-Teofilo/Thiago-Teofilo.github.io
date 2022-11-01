@@ -388,7 +388,8 @@ section .text {
 
 section .text p {
 	margin: 0.3rem 0;
-	line-height: 1rem;
+	line-height: 1.2rem;
+	font-size: 0.8rem;
 }
 
 .bottom-bar {
